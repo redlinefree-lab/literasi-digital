@@ -16,15 +16,6 @@ const scrollHeader = () => {
 
 window.addEventListener('scroll', scrollHeader);
 
-const menuToggleIcon = selectElement('#menu-toggle-btn');
-
-const toggleMenu = () => {
-    const mobileMenu = selectElement("#menu");
-    mobileMenu.classList.toggle('activated');
-    menuToggleIcon.classList.toggle('activated');
-};
-
-menuToggleIcon.addEventListener('click', toggleMenu);
 
 const bodyElement = document.body;
 const themeToggleBtn = selectElement('#theme-toggle-btn');
